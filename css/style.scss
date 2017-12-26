@@ -1,0 +1,118 @@
+@import "compass";
+@import url(https://fonts.googleapis.com/css?family=Abel);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+$baseFontFamily :"游ゴシック", YuGothic, "メイリオ",Verdana, "Hiragino Kaku Gothic ProN", Meiryo, 'Noto Sans Japanese', sans-serif;
+
+// colors
+$baseColor: #fff;
+$subColor: #ccc;
+$keyColor: #808080;
+$fontColor: #757575;
+
+// base
+html { font-size: 62.5%; }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.block-center {
+  display: block;
+  clear: both;
+}
+
+.text-center{
+  text-align: center;
+}
+// main visual
+
+.box {
+  background-image: url("../images/main2.jpg");
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+}
+
+// content
+
+h2 {
+  font-size: 2.2rem;
+  margin: 3% 0 3% 0;
+  color: $fontColor;
+     }
+
+article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container {
+  width: 30%;
+  background-color: $keyColor;
+  
+    h3 {
+      color: $fontColor;
+      background-color: $subColor;
+      margin: 0;
+      font-size: 1.8rem;
+      padding: 10px;
+    }
+  
+}
+
+ .test-box{
+  color: $baseColor;
+  font-size: 1.3rem; 
+}
+  
+@media (max-width: 768px) {
+  .box{
+    height: 250px;
+  }
+  article {
+    flex-direction: column;
+    align-items: center;
+    .container {
+      width: 95%;
+      margin-bottom: 10px;
+      
+      
+    }
+  }
+}
+/* footer */
+footer {
+  margin-top: 30px;
+  background-color: lighten($subColor, 10%);
+  padding-top: 1.5rem;
+  height: 13rem;
+}
+
+h4 {
+  color: $fontColor;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.button {
+  font-size:1.4rem;
+  text-align: center;
+  color: $baseColor;
+  background-color: $keyColor;
+  padding: 5px;
+  width: 30%;
+  margin: 0 auto;
+}
+//
+//背景　と　align　と 幅
+//.button {
+//  margin: auto;
+//  display: block;
+//  clear: both;
+//  text-align :center;
+//  padding: 3.2rem;
+//  background-color:$subColor;
+//  border-radius: 3px;
+//}
